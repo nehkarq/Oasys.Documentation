@@ -40,137 +40,247 @@ Usage: `Hero:IsCombatType()`
 
 ##### EncryptedID
 
-`Hero`
+`Int32`
 
 The encrypted object ID
 
 ##### Index
 
-`Hero`
+`UInt16`
 
 XXX
 
 ##### Team
 
-`Hero`
+`TeamFlag`
 
 XXX
 
 ##### TypeFlag
 
-`Hero`
+`UInt16`
 
 XXX
 
 ##### Name
 
-`Hero`
+`String`
 
 XXX
 
 ##### NetworkID
 
-`Hero`
+`UInt16`
 
 XXX
 
 ##### Position
 
-`Hero`
+`Vector3`
 
 Actual in-game position - use this for calculation
 
 ##### W2S
 
-`Hero`
+`Vector2`
 
 World To Screen position - use this to set your mouse cursor etc
 
 ##### Distance
 
-`Hero`
+`Single`
 
 Distance to Local Player
 
 ##### IsVisible
 
-`Hero`
+`Boolean`
 
 XXX
 
 ##### Mana
 
-`Hero`
+`Single`
 
 XXX
 
 ##### MaxMana
 
-`Hero`
+`Single`
 
 XXX
 
 ##### Health
 
-`Hero`
+`Single`
 
 XXX
 
 ##### MaxHealth
 
-`Hero`
+`Single`
 
 XXX
 
 ##### AttackRange
 
-`Hero`
+`Single`
 
 Attack Range of this object in 100th teemos
 
 ##### UnitStats
 
-`Hero`
+`UnitStats`
 
 Unit stats of this object
 
 ##### Gold
 
-`Hero`
+`Single`
 
 Current gold of this unit
 
 ##### BuffManager
 
-`Hero`
+`BuffManager`
 
 Buff control manager of this unit
 
 ##### CombatType
 
-`Hero`
+`CombatTypes`
 
 CombatType of this unit
 
 ##### UnitComponentInfo
 
-`Hero`
+`UnitComponentInfo`
 
 The unit info of this object
 
 ##### ModelName
 
-`Hero`
+`String`
 
 NAme of this object's Model
 
 ### Debug
 
+Debug
+
+#### Fields
+
+##### Time
+
+`Single`
+
+The Debug-Time used with Start/StopTimer()
+
 ### Do
+
+In-Game Actions Base Class
+
+#### Functions
+
+##### Move
+
+Returns `Void`
+
+Dispatches a move-command via mouse-click to given world position.
+
+Usage: `Do:Move()`
+
+##### Attack
+
+Returns `Void`
+
+Dispatches an attack-command via mouse-click to target hero.
+
+Usage: `Do:Attack()`
+
+##### Attack
+
+Returns `Void`
+
+Dispatches an attack-command via mouse-click to given world position.
+
+Usage: `Do:Attack()`
+
+##### RightClick
+
+Returns `Void`
+
+Sends a right click.
+
+Usage: `Do:RightClick()`
+
+##### LeftClick
+
+Returns `Void`
+
+Sends a left click.
+
+Usage: `Do:LeftClick()`
+
+##### MoveCursor
+
+Returns `Void`
+
+Moves cursor to given world position.
+
+Usage: `Do:MoveCursor()`
+
+##### Spell
+
+Returns `Void`
+
+Casts a spell via key-press event on given target hero.
+
+Usage: `Do:Spell()`
+
+##### Spell
+
+Returns `Void`
+
+Casts a spell via key-press event on given world position.
+
+Usage: `Do:Spell()`
+
+##### Item
+
+Returns `Void`
+
+Uses an item via key-press event on given target hero.
+
+Usage: `Do:Item()`
+
+##### Item
+
+Returns `Void`
+
+Uses an item via key-press event on given world position.
+
+Usage: `Do:Item()`
+
+##### Sleep
+
+Returns `Void`
+
+Sets this module to sleep for a provided number of milliseconds.
+
+Usage: `Do:Sleep()`
 
 ### Cursor
 
 ### Key
+
+#### Functions
+
+##### Down
+
+Returns `Boolean`
+
+Usage: `Key:Down()`
 
 ### Calc
 
@@ -179,6 +289,14 @@ NAme of this object's Model
 ### Spells
 
 ### Minions
+
+#### Functions
+
+##### GetMinionsInRange
+
+Returns `Minion[]`
+
+Usage: `Minions:GetMinionsInRange()`
 
 ### Heroes
 
@@ -228,9 +346,17 @@ Usage: `Heroes:TEMP_GetClosestToPlayer()`
 
 ##### Objects
 
-`Heroes`
+`Hero[]`
 
 Contains all currently registered heroes.
 
 ### Dice
+
+#### Fields
+
+##### Random
+
+`Single`
+
+Returns a random number at call.
 

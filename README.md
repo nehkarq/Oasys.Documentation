@@ -12,29 +12,35 @@ Hero class
 
 #### Functions
 
-##### IsObject
+##### Hero:IsObject()
 
 Returns `Boolean`
 
 XXX
 
-Usage: `Hero:IsObject()`
 
-##### IsTeam
+
+
+
+##### Hero:IsTeam()
 
 Returns `Boolean`
 
 XXX
 
-Usage: `Hero:IsTeam()`
 
-##### IsCombatType
+
+
+
+##### Hero:IsCombatType()
 
 Returns `Boolean`
 
 Checks whether this unit has a given CombatType
 
-Usage: `Hero:IsCombatType()`
+
+
+
 
 #### Fields
 
@@ -170,45 +176,55 @@ Debug
 
 #### Functions
 
-##### Write
+##### Debug:Write()
 
 Returns `Void`
 
 Writes given parameter into console output.
 
-Usage: `Debug:Write()`
 
-##### Object
+
+
+
+##### Debug:Object()
 
 Returns `Void`
 
 Renders an object, JSON formatted, into the console output.
 
-Usage: `Debug:Object()`
 
-##### Read
+
+
+
+##### Debug:Read()
 
 Returns `String`
 
 Returns inputted user text.
 
-Usage: `Debug:Read()`
 
-##### StartTimer
+
+
+
+##### Debug:StartTimer()
 
 Returns `Void`
 
 Starts the Debug-Timer
 
-Usage: `Debug:StartTimer()`
 
-##### StopTimer
+
+
+
+##### Debug:StopTimer()
 
 Returns `Single`
 
 Stops the Debug-Timer
 
-Usage: `Debug:StopTimer()`
+
+
+
 
 #### Fields
 
@@ -224,93 +240,115 @@ In-Game Actions Base Class
 
 #### Functions
 
-##### Move
+##### Do:Move()
 
 Returns `Void`
 
 Dispatches a move-command via mouse-click to given world position.
 
-Usage: `Do:Move()`
 
-##### Attack
+
+
+
+##### Do:Attack()
 
 Returns `Void`
 
 Dispatches an attack-command via mouse-click to target hero.
 
-Usage: `Do:Attack()`
 
-##### Attack
+
+
+
+##### Do:Attack()
 
 Returns `Void`
 
 Dispatches an attack-command via mouse-click to given world position.
 
-Usage: `Do:Attack()`
 
-##### RightClick
+
+
+
+##### Do:RightClick()
 
 Returns `Void`
 
 Sends a right click.
 
-Usage: `Do:RightClick()`
 
-##### LeftClick
+
+
+
+##### Do:LeftClick()
 
 Returns `Void`
 
 Sends a left click.
 
-Usage: `Do:LeftClick()`
 
-##### MoveCursor
+
+
+
+##### Do:MoveCursor()
 
 Returns `Void`
 
 Moves cursor to given world position.
 
-Usage: `Do:MoveCursor()`
 
-##### Spell
+
+
+
+##### Do:Spell()
 
 Returns `Void`
 
 Casts a spell via key-press event on given target hero.
 
-Usage: `Do:Spell()`
 
-##### Spell
+
+
+
+##### Do:Spell()
 
 Returns `Void`
 
 Casts a spell via key-press event on given world position.
 
-Usage: `Do:Spell()`
 
-##### Item
+
+
+
+##### Do:Item()
 
 Returns `Void`
 
 Uses an item via key-press event on given target hero.
 
-Usage: `Do:Item()`
 
-##### Item
+
+
+
+##### Do:Item()
 
 Returns `Void`
 
 Uses an item via key-press event on given world position.
 
-Usage: `Do:Item()`
 
-##### Sleep
+
+
+
+##### Do:Sleep()
 
 Returns `Void`
 
 Sets this module to sleep for a provided number of milliseconds.
 
-Usage: `Do:Sleep()`
+
+
+
 
 ### Cursor
 
@@ -318,11 +356,13 @@ Usage: `Do:Sleep()`
 
 #### Functions
 
-##### Down
+##### Key:Down()
 
 Returns `Boolean`
 
-Usage: `Key:Down()`
+
+
+
 
 ### Calc
 
@@ -334,55 +374,67 @@ Usage: `Key:Down()`
 
 #### Functions
 
-##### GetMinionsInRange
+##### Minions:GetMinionsInRange()
 
 Returns `Minion[]`
 
-Usage: `Minions:GetMinionsInRange()`
+
+
+
 
 ### Heroes
 
 #### Functions
 
-##### GetAll
+##### Heroes:GetAll()
 
 Returns `Hero[]`
 
 Returns all currently registered heroes.
 
-Usage: `Heroes:GetAll()`
 
-##### GetEnemies
+
+
+
+##### Heroes:GetEnemies()
 
 Returns `Hero[]`
 
 Returns all currently registered enemy heroes.
 
-Usage: `Heroes:GetEnemies()`
 
-##### GetEnemiesInRange
+
+
+
+##### Heroes:GetEnemiesInRange()
 
 Returns `Hero[]`
 
 Returns all currently registered enemy heroes within a given range.
 
-Usage: `Heroes:GetEnemiesInRange()`
 
-##### GetAllies
+
+
+
+##### Heroes:GetAllies()
 
 Returns `Hero[]`
 
 Returns all currently registered allied heroes.
 
-Usage: `Heroes:GetAllies()`
 
-##### TEMP_GetClosestToPlayer
+
+
+
+##### Heroes:TEMP_GetClosestToPlayer()
 
 Returns `Hero`
 
 Returns the closest hero to the player.
 
-Usage: `Heroes:TEMP_GetClosestToPlayer()`
+
+
+
 
 #### Fields
 

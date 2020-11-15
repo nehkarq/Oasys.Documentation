@@ -168,6 +168,48 @@ NAme of this object's Model
 
 Debug
 
+#### Functions
+
+##### Write
+
+Returns `Void`
+
+Writes given parameter into console output.
+
+Usage: `Debug:Write()`
+
+##### Object
+
+Returns `Void`
+
+Renders an object, JSON formatted, into the console output.
+
+Usage: `Debug:Object()`
+
+##### Read
+
+Returns `String`
+
+Returns inputted user text.
+
+Usage: `Debug:Read()`
+
+##### StartTimer
+
+Returns `Void`
+
+Starts the Debug-Timer
+
+Usage: `Debug:StartTimer()`
+
+##### StopTimer
+
+Returns `Single`
+
+Stops the Debug-Timer
+
+Usage: `Debug:StopTimer()`
+
 #### Fields
 
 ##### Time

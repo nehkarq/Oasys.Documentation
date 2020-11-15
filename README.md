@@ -1,57 +1,62 @@
-#OASYS DOCUMENTATION
+# OASYS DOCUMENTATION
 
-##LUA API
+## LUA API
 Examples can be found in the exmaple folder.
 
-###Debug
-###Do
-###Cursor
-###Key
-###Calc
-###Info
-###Spells
-###Minions
-###Heroes
-####Functions
-#####GetAll
+### Debug
+### Do
+### Cursor
+### Key
+### Calc
+### Info
+### Spells
+### Minions
+### Heroes
+#### Functions
+##### GetAll
 Returns `Hero[]`
 Returns all currently registered heroes.
 
-Usage: `Heroes:GetAll()`#####GetEnemies
+Usage: `Heroes:GetAll()`
+##### GetEnemies
 Returns `Hero[]`
 Returns all currently registered enemy heroes.
 
-Usage: `Heroes:GetEnemies()`#####GetEnemiesInRange
+Usage: `Heroes:GetEnemies()`
+##### GetEnemiesInRange
 Returns `Hero[]`
 Returns all currently registered enemy heroes within a given range.
 
-Usage: `Heroes:GetEnemiesInRange()`#####GetAllies
+Usage: `Heroes:GetEnemiesInRange()`
+##### GetAllies
 Returns `Hero[]`
 Returns all currently registered allied heroes.
 
-Usage: `Heroes:GetAllies()`#####TEMP_GetClosestToPlayer
+Usage: `Heroes:GetAllies()`
+##### TEMP_GetClosestToPlayer
 Returns `Hero`
 Returns the closest hero to the player.
 
-Usage: `Heroes:TEMP_GetClosestToPlayer()`####Fields
-#####GetAll
+Usage: `Heroes:TEMP_GetClosestToPlayer()`
+#### Fields
+##### GetAll
 `Heroes`
 Returns all currently registered heroes.
 
-#####GetEnemies
+##### GetEnemies
 `Heroes`
 Returns all currently registered enemy heroes.
 
-#####GetEnemiesInRange
+##### GetEnemiesInRange
 `Heroes`
 Returns all currently registered enemy heroes within a given range.
 
-#####GetAllies
+##### GetAllies
 `Heroes`
 Returns all currently registered allied heroes.
 
-#####TEMP_GetClosestToPlayer
+##### TEMP_GetClosestToPlayer
 `Heroes`
 Returns the closest hero to the player.
 
-###Dice
+### Dice

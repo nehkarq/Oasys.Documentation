@@ -12,7 +12,7 @@ Hero class
 
 #### Functions
 
-##### Hero:IsObject(, o)
+##### Hero:IsObject(oTF)
 
 Returns `Boolean`
 
@@ -22,7 +22,7 @@ XXX
 
 
 
-##### Hero:IsTeam(, tFl)
+##### Hero:IsTeam(tFlag)
 
 Returns `Boolean`
 
@@ -32,7 +32,7 @@ XXX
 
 
 
-##### Hero:IsCombatType(, CTy)
+##### Hero:IsCombatType(CType)
 
 Returns `Boolean`
 
@@ -176,7 +176,7 @@ Debug
 
 #### Functions
 
-##### Debug:Write(, a)
+##### Debug:Write(any)
 
 Returns `Void`
 
@@ -186,7 +186,7 @@ Writes given parameter into console output.
 
 
 
-##### Debug:Object(, a)
+##### Debug:Object(any)
 
 Returns `Void`
 
@@ -240,7 +240,7 @@ In-Game Actions Base Class
 
 #### Functions
 
-##### Do:Move(, x,)
+##### Do:Move(x, y)
 
 Returns `Void`
 
@@ -250,7 +250,7 @@ Dispatches a move-command via mouse-click to given world position.
 
 
 
-##### Do:Attack(, targ)
+##### Do:Attack(target)
 
 Returns `Void`
 
@@ -260,7 +260,7 @@ Dispatches an attack-command via mouse-click to target hero.
 
 
 
-##### Do:Attack(, x,)
+##### Do:Attack(x, y)
 
 Returns `Void`
 
@@ -290,7 +290,7 @@ Sends a left click.
 
 
 
-##### Do:MoveCursor(, x,)
+##### Do:MoveCursor(x, y)
 
 Returns `Void`
 
@@ -300,7 +300,7 @@ Moves cursor to given world position.
 
 
 
-##### Do:Spell(, slot, targ)
+##### Do:Spell(slot, target)
 
 Returns `Void`
 
@@ -310,7 +310,7 @@ Casts a spell via key-press event on given target hero.
 
 
 
-##### Do:Spell(, slot, x,)
+##### Do:Spell(slot, x, y)
 
 Returns `Void`
 
@@ -320,7 +320,7 @@ Casts a spell via key-press event on given world position.
 
 
 
-##### Do:Item(, slot, targ)
+##### Do:Item(slot, target)
 
 Returns `Void`
 
@@ -330,7 +330,7 @@ Uses an item via key-press event on given target hero.
 
 
 
-##### Do:Item(, slot, x,)
+##### Do:Item(slot, x, y)
 
 Returns `Void`
 
@@ -340,7 +340,7 @@ Uses an item via key-press event on given world position.
 
 
 
-##### Do:Sleep(, )
+##### Do:Sleep(ms)
 
 Returns `Void`
 
@@ -356,7 +356,7 @@ Sets this module to sleep for a provided number of milliseconds.
 
 #### Functions
 
-##### Key:Down(, co)
+##### Key:Down(code)
 
 Returns `Boolean`
 
@@ -374,7 +374,7 @@ Returns `Boolean`
 
 #### Functions
 
-##### Minions:GetMinionsInRange(, ran)
+##### Minions:GetMinionsInRange(range)
 
 Returns `Minion[]`
 
@@ -406,7 +406,7 @@ Returns all currently registered enemy heroes.
 
 
 
-##### Heroes:GetEnemiesInRange(, ran)
+##### Heroes:GetEnemiesInRange(range)
 
 Returns `Hero[]`
 

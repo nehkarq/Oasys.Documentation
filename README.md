@@ -1,28 +1,18 @@
-# OASYS DOCUMENTATION
+## OASYS DOCUMENTATION
 
 
 
-## LUA API
+# LUA API
 
 Examples can be found in the exmaple folder.
 
-### Hero
+## Hero
 
 Hero class
 
-#### Functions
+### Functions
 
-##### Hero:IsObject(oTF)
-
-Returns `Boolean`
-
-XXX
-
-
-
-
-
-##### Hero:IsTeam(tFlag)
+#### Hero:IsObject(oTF)
 
 Returns `Boolean`
 
@@ -32,7 +22,17 @@ XXX
 
 
 
-##### Hero:IsCombatType(CType)
+#### Hero:IsTeam(tFlag)
+
+Returns `Boolean`
+
+XXX
+
+
+
+
+
+#### Hero:IsCombatType(CType)
 
 Returns `Boolean`
 
@@ -44,139 +44,139 @@ Checks whether this unit has a given CombatType
 
 #### Fields
 
-##### EncryptedID
+#### EncryptedID
 
 `Int32`
 
 The encrypted object ID
 
-##### Index
+#### Index
 
 `UInt16`
 
 XXX
 
-##### Team
+#### Team
 
 `TeamFlag`
 
 XXX
 
-##### TypeFlag
+#### TypeFlag
 
 `UInt16`
 
 XXX
 
-##### Name
+#### Name
 
 `String`
 
 XXX
 
-##### NetworkID
+#### NetworkID
 
 `UInt16`
 
 XXX
 
-##### Position
+#### Position
 
 `Vector3`
 
 Actual in-game position - use this for calculation
 
-##### W2S
+#### W2S
 
 `Vector2`
 
 World To Screen position - use this to set your mouse cursor etc
 
-##### Distance
+#### Distance
 
 `Single`
 
 Distance to Local Player
 
-##### IsVisible
+#### IsVisible
 
 `Boolean`
 
 XXX
 
-##### Mana
+#### Mana
 
 `Single`
 
 XXX
 
-##### MaxMana
+#### MaxMana
 
 `Single`
 
 XXX
 
-##### Health
+#### Health
 
 `Single`
 
 XXX
 
-##### MaxHealth
+#### MaxHealth
 
 `Single`
 
 XXX
 
-##### AttackRange
+#### AttackRange
 
 `Single`
 
 Attack Range of this object in 100th teemos
 
-##### UnitStats
+#### UnitStats
 
 `UnitStats`
 
 Unit stats of this object
 
-##### Gold
+#### Gold
 
 `Single`
 
 Current gold of this unit
 
-##### BuffManager
+#### BuffManager
 
 `BuffManager`
 
 Buff control manager of this unit
 
-##### CombatType
+#### CombatType
 
 `CombatTypes`
 
 CombatType of this unit
 
-##### UnitComponentInfo
+#### UnitComponentInfo
 
 `UnitComponentInfo`
 
 The unit info of this object
 
-##### ModelName
+#### ModelName
 
 `String`
 
 NAme of this object's Model
 
-### Debug
+## Debug
 
 Debug
 
-#### Functions
+### Functions
 
-##### Debug:Write(any)
+#### Debug:Write(any)
 
 Returns `Void`
 
@@ -186,7 +186,7 @@ Writes given parameter into console output.
 
 
 
-##### Debug:Object(any)
+#### Debug:Object(any)
 
 Returns `Void`
 
@@ -196,7 +196,7 @@ Renders an object, JSON formatted, into the console output.
 
 
 
-##### Debug:Read()
+#### Debug:Read()
 
 Returns `String`
 
@@ -206,7 +206,7 @@ Returns inputted user text.
 
 
 
-##### Debug:StartTimer()
+#### Debug:StartTimer()
 
 Returns `Void`
 
@@ -216,7 +216,7 @@ Starts the Debug-Timer
 
 
 
-##### Debug:StopTimer()
+#### Debug:StopTimer()
 
 Returns `Single`
 
@@ -228,19 +228,19 @@ Stops the Debug-Timer
 
 #### Fields
 
-##### Time
+#### Time
 
 `Single`
 
 The Debug-Time used with Start/StopTimer()
 
-### Do
+## Do
 
 In-Game Actions Base Class
 
-#### Functions
+### Functions
 
-##### Do:Move(x, y)
+#### Do:Move(x, y)
 
 Returns `Void`
 
@@ -250,7 +250,7 @@ Dispatches a move-command via mouse-click to given world position.
 
 
 
-##### Do:Attack(target)
+#### Do:Attack(target)
 
 Returns `Void`
 
@@ -260,7 +260,7 @@ Dispatches an attack-command via mouse-click to target hero.
 
 
 
-##### Do:Attack(x, y)
+#### Do:Attack(x, y)
 
 Returns `Void`
 
@@ -270,7 +270,7 @@ Dispatches an attack-command via mouse-click to given world position.
 
 
 
-##### Do:RightClick()
+#### Do:RightClick()
 
 Returns `Void`
 
@@ -280,7 +280,7 @@ Sends a right click.
 
 
 
-##### Do:LeftClick()
+#### Do:LeftClick()
 
 Returns `Void`
 
@@ -290,7 +290,7 @@ Sends a left click.
 
 
 
-##### Do:MoveCursor(x, y)
+#### Do:MoveCursor(x, y)
 
 Returns `Void`
 
@@ -300,7 +300,7 @@ Moves cursor to given world position.
 
 
 
-##### Do:Spell(slot, target)
+#### Do:Spell(slot, target)
 
 Returns `Void`
 
@@ -310,7 +310,7 @@ Casts a spell via key-press event on given target hero.
 
 
 
-##### Do:Spell(slot, x, y)
+#### Do:Spell(slot, x, y)
 
 Returns `Void`
 
@@ -320,7 +320,7 @@ Casts a spell via key-press event on given world position.
 
 
 
-##### Do:Item(slot, target)
+#### Do:Item(slot, target)
 
 Returns `Void`
 
@@ -330,7 +330,7 @@ Uses an item via key-press event on given target hero.
 
 
 
-##### Do:Item(slot, x, y)
+#### Do:Item(slot, x, y)
 
 Returns `Void`
 
@@ -340,7 +340,7 @@ Uses an item via key-press event on given world position.
 
 
 
-##### Do:Sleep(ms)
+#### Do:Sleep(ms)
 
 Returns `Void`
 
@@ -350,13 +350,13 @@ Sets this module to sleep for a provided number of milliseconds.
 
 
 
-### Cursor
+## Cursor
 
-### Key
+## Key
 
-#### Functions
+### Functions
 
-##### Key:Down(code)
+#### Key:Down(code)
 
 Returns `Boolean`
 
@@ -364,17 +364,17 @@ Returns `Boolean`
 
 
 
-### Calc
+## Calc
 
-### Info
+## Info
 
-### Spells
+## Spells
 
-### Minions
+## Minions
 
-#### Functions
+### Functions
 
-##### Minions:GetMinionsInRange(range)
+#### Minions:GetMinionsInRange(range)
 
 Returns `Minion[]`
 
@@ -382,11 +382,11 @@ Returns `Minion[]`
 
 
 
-### Heroes
+## Heroes
 
-#### Functions
+### Functions
 
-##### Heroes:GetAll()
+#### Heroes:GetAll()
 
 Returns `Hero[]`
 
@@ -396,7 +396,7 @@ Returns all currently registered heroes.
 
 
 
-##### Heroes:GetEnemies()
+#### Heroes:GetEnemies()
 
 Returns `Hero[]`
 
@@ -406,7 +406,7 @@ Returns all currently registered enemy heroes.
 
 
 
-##### Heroes:GetEnemiesInRange(range)
+#### Heroes:GetEnemiesInRange(range)
 
 Returns `Hero[]`
 
@@ -416,7 +416,7 @@ Returns all currently registered enemy heroes within a given range.
 
 
 
-##### Heroes:GetAllies()
+#### Heroes:GetAllies()
 
 Returns `Hero[]`
 
@@ -426,7 +426,7 @@ Returns all currently registered allied heroes.
 
 
 
-##### Heroes:TEMP_GetClosestToPlayer()
+#### Heroes:TEMP_GetClosestToPlayer()
 
 Returns `Hero`
 
@@ -438,17 +438,79 @@ Returns the closest hero to the player.
 
 #### Fields
 
-##### Objects
+#### Objects
 
 `Hero[]`
 
 Contains all currently registered heroes.
 
-### Dice
+## Dice
+
+### Functions
+
+#### Dice:Roll(chance)
+
+Returns `Boolean`
+
+Rolls % chance and returns true if chance was met.
+
+
+
+
+
+#### Dice:Range(min, max)
+
+Returns `Single`
+
+Returns a random value between min and max (max exclusive).
+
+
+
+
+
+#### Dice:Range(min, max)
+
+Returns `Int32`
+
+Returns a random value between min and max (max exclusive).
+
+
+
+
+
+#### Dice:Choose(options)
+
+Returns `T`
+
+Chooses one of the given parameters as random and returns it.
+
+
+
+
+
+#### Dice:ExpoRoll(min, max, power, defx)
+
+Returns `Single`
+
+This is complicated to explain.
+
+
+
+
+
+#### Dice:BrewString(length, set)
+
+Returns `String`
+
+Returns a random alphanumeric string of given length.
+
+
+
+
 
 #### Fields
 
-##### Random
+#### Random
 
 `Single`
 
